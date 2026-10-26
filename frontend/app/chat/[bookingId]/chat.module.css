@@ -1,0 +1,59 @@
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+
+.title { font-size: 20px; font-weight: 700; }
+
+.status { font-size: 13px; font-weight: 600; }
+.connected { color: var(--primary); }
+.disconnected { color: var(--text-muted); }
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: 16px;
+}
+
+.msg { display: flex; flex-direction: column; max-width: 70%; }
+.mine { align-self: flex-end; align-items: flex-end; }
+.theirs { align-self: flex-start; align-items: flex-start; }
+
+.bubble {
+  padding: 10px 14px;
+  border-radius: var(--radius-lg);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mine .bubble { background: var(--primary); color: #fff; border-bottom-right-radius: 4px; }
+.theirs .bubble { background: var(--bg-elevated); color: var(--text-primary); border-bottom-left-radius: 4px; }
+
+.timestamp { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+
+.inputArea {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.chatInput { flex: 1; }

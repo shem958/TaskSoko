@@ -1,0 +1,117 @@
+.page { padding: 40px 0 80px; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+  align-items: start;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.breadcrumb a { color: var(--primary); }
+.breadcrumb a:hover { text-decoration: underline; }
+
+.title { font-size: 32px; font-weight: 800; margin-bottom: 16px; }
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.section { margin-bottom: 40px; }
+.sectionTitle { font-size: 20px; font-weight: 700; margin-bottom: 16px; }
+
+.desc { font-size: 15px; color: var(--text-secondary); line-height: 1.8; }
+
+.providerCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-lg);
+}
+
+.providerName { font-size: 16px; font-weight: 700; margin-bottom: 2px; }
+.providerEmail { font-size: 13px; color: var(--text-secondary); }
+
+.mapPlaceholder {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+/* Reviews */
+.reviews { display: flex; flex-direction: column; gap: 16px; }
+
+.review {
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-lg);
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.reviewUser { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.reviewComment { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+/* Booking Sidebar */
+.sidebar { position: sticky; top: 84px; }
+
+.bookingCard {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-elevated);
+}
+
+.price {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.priceLabel { font-size: 13px; color: var(--text-muted); margin-top: 2px; margin-bottom: 4px; }
+
+.bookForm { display: flex; flex-direction: column; gap: 16px; }
+
+.paymentBadge {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+}

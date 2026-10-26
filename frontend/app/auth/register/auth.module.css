@@ -1,0 +1,84 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -20%, rgba(0, 197, 126, 0.08) 0%, transparent 70%);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-xl);
+  padding: 48px 44px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: var(--shadow-elevated);
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.roleToggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: var(--bg-elevated);
+  padding: 4px;
+  border-radius: var(--radius-md);
+  margin-bottom: 4px;
+}
+
+.roleBtn {
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: transparent;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.roleActive {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 0 12px var(--primary-glow);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.footer a { color: var(--primary); font-weight: 600; }
+.footer a:hover { text-decoration: underline; }
